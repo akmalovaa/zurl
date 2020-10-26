@@ -9,8 +9,11 @@ simple python code for open winbox,ssh,vnc,rdp on the map.
 2. Run  C:\zurl\zurl.reg 
 
 3. Zabbix server add "zurl" valid_uri
+
 edit defines.inc.php 
+
 nano /usr/share/zabbix/include/defines.inc.php
+
 Ctrl+W - find: ZBX_URI_VALID_SCHEMES - add zurl - Save and Exit
 
 
