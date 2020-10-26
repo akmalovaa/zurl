@@ -24,3 +24,6 @@ zurl://**x** ipaddress login password
 >>vnc - vncviewer.exe;
 
 >>ssh - putty.exe;
+
+
+I used pyinstaller to create exe file. Windows Defender doesn't trust me. You can convert exe to py yourself or add it to an exception in windows defender
