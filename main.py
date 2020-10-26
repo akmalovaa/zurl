@@ -32,8 +32,9 @@ def zurl (args):
         subprocess.call(f'mstsc /v:{ipaddr}')
     if args == 'ssh':
         if login != 'admin':
-            subprocess.run('putty.exe', f'{login}@{ipaddr}')
-        subprocess.run(['putty.exe', ipaddr])
+            subprocess.run(['putty.exe', f'{login}@{ipaddr}'])
+        else:
+            subprocess.run(['putty.exe', ipaddr])
     if args == 'vnc':
         subprocess.run(['vncviewer.exe', ipaddr])
     sys.exit()
